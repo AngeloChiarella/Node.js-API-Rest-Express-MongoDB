@@ -5,5 +5,6 @@ const router = express.Router();
 
 router // param1 Rota, param2 Acao, 
     .get("/livros", LivroController.listarLivros)
+    .post("/livros", LivroController.cadastrarLivro)
 
 export default router;
