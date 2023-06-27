@@ -8,5 +8,6 @@ router // param1 Rota, param2 Acao,
     .get("/livros/:id", LivroController.listarPorId)
     .post("/livros", LivroController.cadastrarLivro)
     .put("/livros/:id", LivroController.atualizarLivro)
+    .delete("/livros/:id", LivroController.excluirLivro)
 
 export default router;
